@@ -9,7 +9,7 @@ const Home = ({ posts }) => {
   return (
     <>
       <Head>
-        <title>AJ's Porfolio</title>
+        <title>AJs Porfolio</title>
         <meta
           name='description'
           content='AJ is showcasing his skills by building this site using Next.js, Tailwind CSS and Sanity on the back end!'
@@ -32,6 +32,7 @@ const Home = ({ posts }) => {
                 src='/RUDtSIrV_400x400.jpg'
                 height={150}
                 width={150}
+                alt='Profile picture'
                 className='rounded-full right-0'
               />
               <h2 className='text-white text-3xl justify-start font-lexe'>
@@ -42,10 +43,10 @@ const Home = ({ posts }) => {
                 </span>
               </h2>
               <p className='font-mont text-xl text-white mt-6'>
-                I am a Skilled Laborer that's turning Coder!
+                I am a Skilled Laborer thats turning Coder!
               </p>
               <p className='text-white font-mont mt-6'>
-                I built this site and all it's features from scratch.
+                I built this site and all its features from scratch.
                 <br />
                 <br />
                 Through all the minutes and the hours and the days, weeks and
@@ -53,8 +54,8 @@ const Home = ({ posts }) => {
                 <br />
                 Through all the struggle and strife...
                 <br />
-                Through all the problems that I've had to scrounge through MDN,
-                Stack Overflow, YouTube and Udemy
+                Through all the problems that I have had to scrounge through
+                MDN, Stack Overflow, YouTube and Udemy
                 <br /> to find the answers.
                 <br />
                 <br />I built this site!
