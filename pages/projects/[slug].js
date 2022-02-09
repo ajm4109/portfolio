@@ -6,7 +6,7 @@ const Projects = ({ project }) => {
   return (
     <>
       <Head>
-        <title>{project.name}</title>
+        <title>AJM - {project.name}</title>
         <meta
           name='description'
           content='AJ is showcasing his skills by building this site using Next.js, Tailwind CSS and Sanity on the back end!'
