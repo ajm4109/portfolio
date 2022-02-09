@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Layout from '../../components/layout';
+import { sanityClient } from '../../lib/sanity';
 
 const Projects = ({ project }) => {
   return (

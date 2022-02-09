@@ -56,7 +56,7 @@ const Header = () => {
         <div>
           <ul className='hidden sm:inline-flex items-center space-x-3'>
             <li>
-              <Link href='/projects/projects'>
+              <Link href='/projects'>
                 <a className='text-white text-2xl hover:text-gold hover:border-b-2 hover:border-gold'>
                   Projects
                 </a>
