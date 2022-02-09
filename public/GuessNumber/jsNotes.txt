@@ -1,0 +1,14 @@
+// // NUMBER DECLARATIONS //
+// const userGuess = document.getElementById("secretnumguess");
+// const secretNumber = document.getElementById("secretnumber");
+// const scoreNumber = document.getElementById("scorenumber");
+// const highScoreNumber = document.getElementById("highscorenumber");
+
+
+// // TEXT DECLARATIONS //
+// const answerParagraph = document.getElementById("answerpara");
+
+
+// // BUTTONS //
+// const resetBtn = document.getElementById("reset");
+// const checkBtn = document.getElementById("check")

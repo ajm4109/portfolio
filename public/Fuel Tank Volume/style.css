@@ -1,0 +1,111 @@
+*, *::before, *::after{
+  margin: 0;
+  Padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  font-family: 'Cinzel', sans-serif;
+}
+
+h2{
+  font-family: 'Russo One', sans-serif;
+}
+
+p, td {
+  font-family: 'Lexend Giga', sans-serif;
+  padding: 10px;
+}
+
+li{
+  font-family: 'Lexend Giga', sans-serif;
+}
+
+.headContainer{
+  text-align: center;
+  background-image: linear-gradient(#430000, #ffffff);
+  color: white;
+  padding: 20px;
+}
+
+.headContainer h2{
+  color: #430000;
+}
+
+.formContainer{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.formInputs{
+  width: 12em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.formContainer table{
+  text-align: center;
+  margin: auto;
+}
+
+.submitbtn{
+  padding-top: 1rem;
+  width: 100%;
+  text-align: center;
+  outline: none;
+}
+
+button{
+  cursor: pointer;
+  width: 25%;
+}
+
+.answerKey{
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.exp{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.titpic{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 90%;
+}
+
+.picTitle{
+  margin-bottom: 3em;
+}
+
+.imgPic{
+  max-width: 75%;
+}
+
+.picBlockPara{
+padding: 16px;
+}
+
+.mathexp{
+  max-width: 75%;
+  margin-bottom: 6em;
+}
+
+.list{
+  padding-left: 3rem;
+}
+
+img{
+  width: 100%;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Fuel Calc</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cinzel&family=Lexend+Giga&family=Russo+One&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="index.js" defer charset="utf-8"></script>
+
+</head>
+
+
+<body>
+
+<!-- Header -->
+  <div class="headContainer">
+    <div class="headTitle">
+      <h1>Fuel Tank Volume Calculator</h1>
+    </div>
+    <div class="subHeadTitle">
+      <h2>The easy way to know how much fuel you got left!</h2>
+    </div>
+  </div>
+
+<!-- Form Input -->
+  <div class="formContainer">
+    <table>
+      <tr>
+        <td><label>What is the diameter of the tank in inches?</label></td>
+        <td><input class="formInputs" type="number" name="diameterIn" value=""><br></td>
+      </tr>
+      <tr>
+        <td><label>What is the length of the tank in inches?</label></td>
+        <td><input class="formInputs" type="number" name="lengthIn" value=""><br></td>
+      </tr>
+      <tr>
+        <td><label>What is the fuel level in centemeters?</label></td>
+        <td><input class="formInputs" type="number" name="fuelLvLIn" value=""><br></td>
+      </tr>
+    </table>
+
+    <div class="submitbtn">
+      <button id="submitButton" type="submit" class="btn btn-outline-dark" name="submitbutton" t>Submit</button>
+    </div>
+
+    <div class="answerKey">
+      <p class="answerText"></p>
+    </div>
+  </div>
+
+
+<!-- Math Explination -->
+  <div class="exp">
+
+    <div class="titpic">
+      <div class="picTitle">
+        <h2>3 Measurements</h2>
+      </div>
+      <div class="imgPic">
+        <img src="images/horizontal-cylinder-tank.png" alt="Partially filled horizontal cylinder tank picture">
+      </div>
+    </div>
+
+    <div class="picBlockPara">
+      <div>
+        <p>
+          There are 3 measurements that you will need to figure this out.
+        </p>
+      </div>
+      <div>
+        <p class="list">
+          1. Diameter<br>
+          2. Length<br>
+          3. The hieght of the liquid
+        </p>
+      </div>
+    </div>
+
+    <div class="mathexp">
+      <p>
+        If you stand a tank up on one of its flat ends, the volume of the liquid inside the take
+        is easy to calculate.
+      </p>
+      <p>
+        The equation is the <em><strong>area of the circle</strong></em> multiplied by the <em><strong>height of the
+            liquid</strong></em>.
+        [V = 𝝅 ✖ r² ✖ height of the liquid]
+      </p>
+      <p>
+        The trouble is when you lay it on it's side, it makes the math more difficult
+        to figure out the volume. Now, you have to find the <em><strong>area of the segment</strong></em>
+        of the full circle and then multiply that by the length of the tank.
+      </p>
+      <p>
+        To figure out the <em><strong>area of the segment</strong></em>, you need to use geometry and trginometry to
+        find
+        the
+        <em><strong>area of the sector</strong></em>, <em><strong>the triangle within it</strong></em> and
+        <em><strong>the
+            height and the
+            angles</strong></em> of the triangle.
+      </p>
+      <p>
+        I mean, <em>you could</em> do that... Or you could just use this website. 🤷‍♀️👌
+      </p>
+    </div>
+  </div>
+
+</body>
+
+</html>

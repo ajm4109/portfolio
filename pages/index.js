@@ -1,0 +1,118 @@
+import Head from 'next/head';
+import Image from 'next/image';
+import Layout from '../components/layout';
+import { sanityClient } from '../lib/sanity';
+
+const Home = ({ posts }) => {
+  console.log(posts);
+
+  return (
+    <>
+      <Head>
+        <title>AJ's Porfolio</title>
+        <meta
+          name='description'
+          content='AJ is showcasing his skills by building this site using Next.js, Tailwind CSS and Sanity on the back end!'
+        />
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
+      <Layout>
+        <main
+          style={{
+            background:
+              "linear-gradient(rgba(0 0 0 /.7), rgba(0 0 0 /.9)),url('/BGs/bgDarkBlue.png')",
+          }}
+          className='min-h-screen py-10'>
+          <section className='max-w-5xl mx-auto mb-10 text-center'>
+            <h1 className='text-5xl md:text-6xl py-3 text-white font-lexe'>
+              Welcome
+            </h1>
+            <div className='flex-col items-center justify-center px-5 space-x-4 mt-6 flex-wrap'>
+              <Image
+                src='/RUDtSIrV_400x400.jpg'
+                height={150}
+                width={150}
+                className='rounded-full right-0'
+              />
+              <h2 className='text-white text-3xl justify-start font-lexe'>
+                My name is
+                <br /> Anthony J. Martin <br />
+                <span className='text-lg font-mont'>
+                  ...But you may call me AJ 😎
+                </span>
+              </h2>
+              <p className='font-mont text-xl text-white mt-6'>
+                I am a Skilled Laborer that's turning Coder!
+              </p>
+              <p className='text-white font-mont mt-6'>
+                I built this site and all it's features from scratch.
+                <br />
+                <br />
+                Through all the minutes and the hours and the days, weeks and
+                months...
+                <br />
+                Through all the struggle and strife...
+                <br />
+                Through all the problems that I've had to scrounge through MDN,
+                Stack Overflow, YouTube and Udemy
+                <br /> to find the answers.
+                <br />
+                <br />I built this site!
+              </p>
+            </div>
+          </section>
+          <section className='max-w-5xl mx-auto'>
+            <div className='mx-5 bg-gray-300 rounded-lg p-3'>
+              <div className='block'>
+                <p className='text-slate-800'>
+                  Check out the latest announcements below or check out the
+                  announcements page to see all my developments.
+                </p>
+              </div>
+              <div className='my-5 max-w-3xl mx-auto'>
+                <h1 className='text-2xl md:text-3xl font-lexe'>
+                  Announcements
+                </h1>
+              </div>
+
+              {posts.map((post) => (
+                <div key={post._id} className='max-w-2xl mx-auto'>
+                  <div className='border-2 border-slate-800 shadow-lg rounded-xl p-5'>
+                    <h1 className='font-bold text-xl font-lexe '>
+                      {post.title}
+                    </h1>
+                    <p className='font-mont text-sm py-3'>
+                      {post.shortDescription}
+                    </p>
+                    <p className='font-mono text-sm'>{post.date}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        </main>
+      </Layout>
+    </>
+  );
+};
+
+export default Home;
+
+export const getStaticProps = async () => {
+  const query = `*[_type=='annoPost']{
+    _id,
+    title,
+    slug{current},
+    date,
+    shortDescription,
+    body,
+  }`;
+
+  const posts = await sanityClient.fetch(query);
+
+  return {
+    props: {
+      posts,
+    },
+  };
+};

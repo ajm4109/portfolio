@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Fibonacci Sequencer</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylz.css">
+</head>
+
+<body>
+
+  <!-- PAGE HEADER -->
+  <div class="headerBody">
+    <div class="headerBody__brand">
+      <h1 class="name">Anthony's</h1>
+      <br>
+      <h2>Fibonacci Sequencer</h2>
+    </div>
+    <nav class="headerBody__nav">
+      <ul class="headerBody__nav-items">
+        <li class="headerBody__nav-item">
+          <a href="bio.html">Bio</a>
+        </li>
+        <li class="headerBody__nav-item">
+          <a href="plans.html">Plans</a>
+        </li>
+        <li class="headerBody__nav-item">
+          <a href="projects.html">Projects</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- MAIN BODY -->
+  <div class="mainBody">
+    <article class="mainText">
+      <p>
+        ENTER A NUMBER OF HOW MANY DIGITS INTO THE FIBONACCI SEQUENCE YOU WOULD LIKE
+        TO GO
+      </p>
+    </article>
+    <article class="mainInput">
+      <input id="userInput" type="number" placeholder="1-1000">
+      <br><br>
+      <button class="tron" type="submit">Submit</button>
+    </article>
+  </div>
+
+  <!-- ANSWER BODY -->
+  <div class="answerBody">
+    <p class="answerText"></p>
+  </div>
+  
+<!-- SCRIPT -->
+  <script src="fib.js" charset="utf-8"></script>
+
+</body>
+
+</html>
