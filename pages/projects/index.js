@@ -20,11 +20,11 @@ const Projects = ({ projects }) => {
             background:
               "linear-gradient(rgba(0 0 0 /.7), rgba(0 0 0 /.9)),url('/BGs/bgGreen.png')",
           }}
-          className='h-screen'>
-          <h1 className=' text-5xl md:text-6xl text-white font-lexe py-10 pl-28'>
+          className=' min-h-screen flex flex-col items-center justify-center'>
+          <h1 className=' text-5xl md:text-6xl text-white font-lexe py-10 text-center '>
             Past Projects
           </h1>
-          <section className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-6 p-2 lg:p-6'>
+          <section className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-6 p-2 lg:p-6 max-w-5xl'>
             {projects.map((project) => (
               <Link
                 key={project._id}
