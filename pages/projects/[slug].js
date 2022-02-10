@@ -1,6 +1,9 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import Layout from '../../components/layout';
-import { sanityClient } from '../../lib/sanity';
+import { sanityClient, urlFor } from '../../lib/sanity';
+import PortableText from 'react-portable-text';
+import Image from 'next/image';
 
 const Project = ({ project }) => {
   return (
@@ -19,11 +22,40 @@ const Project = ({ project }) => {
             background:
               "linear-gradient(rgba(0 0 0 /.7), rgba(0 0 0 /.9)),url('/BGs/bgGreen.png')",
           }}
-          className='h-screen'>
-          <section>
-            <h1 className=' text-5xl md:text-6xl text-white font-lexe py-10'>
-              Past Projects
+          className='min-h-screen pt-7'>
+          <div className='relative h-28 w-full'>
+            <Image
+              src={urlFor(project.mainImage).url()}
+              className='object-cover object-top'
+              layout='fill'
+            />
+          </div>
+          <section className='px-7 max-w-6xl mx-auto flex flex-col items-center justify-center'>
+            <h1 className='text-center text-5xl md:text-6xl text-white font-lexe py-10'>
+              {project.name}
             </h1>
+            <div className='pb-10 space-x-7'>
+              <Link className='hover:scale-110' href='./'>
+                <a className='text-white border border-gold px-7 py-2 bg-drkRed/50 rounded '>
+                  Back to Projects
+                </a>
+              </Link>
+              <Link
+                className='hover:scale-110'
+                href={'../' + project.name + '/index.html'}>
+                <a
+                  target='_blank'
+                  className='text-white border border-gold px-7 py-2 bg-drkRed/50 rounded '>
+                  View Project
+                </a>
+              </Link>
+            </div>
+            <div>
+              <PortableText
+                className='text-white font-mont text-lg'
+                content={project.body}
+              />
+            </div>
           </section>
         </main>
       </Layout>
@@ -78,6 +110,5 @@ export const getStaticProps = async ({ params }) => {
     props: {
       project,
     },
-    revalidate: 60,
   };
 };
