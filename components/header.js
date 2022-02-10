@@ -13,7 +13,7 @@ const Header = () => {
   const [navBG, setNavBG] = useState('linear-gradient(#770000, #060507)');
 
   useEffect(() => {
-    if (location.pathname === '/projects/projects') {
+    if (location.pathname === '/projects') {
       setNavBG('linear-gradient(#770000, #0A0900)');
     } else if (location.pathname === '/skills') {
       setNavBG('linear-gradient(#770000, #A5A5A5)');

@@ -21,10 +21,10 @@ const Projects = ({ projects }) => {
               "linear-gradient(rgba(0 0 0 /.7), rgba(0 0 0 /.9)),url('/BGs/bgGreen.png')",
           }}
           className=' min-h-screen flex flex-col items-center justify-center'>
-          <h1 className=' text-5xl md:text-6xl text-white font-lexe py-10 text-center '>
+          <h1 className=' text-5xl md:text-6xl text-white font-lexe pb-10 text-center '>
             Past Projects
           </h1>
-          <section className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-6 p-2 lg:p-6 max-w-5xl'>
+          <section className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-6 p-2 lg:p-6 max-w-7xl'>
             {projects.map((project) => (
               <Link
                 key={project._id}
@@ -34,7 +34,7 @@ const Projects = ({ projects }) => {
                     src={urlFor(project.mainImage).url()}
                     className='h-60 w-full object-cover group-hover:scale-105 transition-transform duration-200 ease-in-out'
                   />
-                  <div className='flex justify-between p-5 bg-zinc-200'>
+                  <div className='flex flex-col justify-between p-5 bg-zinc-200 h-full'>
                     <div>
                       <h1 className='text-xl font-bold font-lexe'>
                         {project.name}
