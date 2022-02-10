@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Layout from '../../components/layout';
 import { sanityClient } from '../../lib/sanity';
 
-const Projects = ({ project }) => {
+const Project = ({ project }) => {
   return (
     <>
       <Head>
@@ -31,7 +31,7 @@ const Projects = ({ project }) => {
   );
 };
 
-export default Projects;
+export default Project;
 
 export const getStaticPaths = async () => {
   const query = `*[_type=='projects']{
