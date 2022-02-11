@@ -31,21 +31,19 @@ const Project = ({ project }) => {
             />
           </div>
           <section className='px-7 max-w-6xl mx-auto flex flex-col items-center justify-center'>
-            <h1 className='text-center text-5xl md:text-6xl text-white font-lexe py-10'>
+            <h1 className='text-center shrink text-5xl md:text-6xl text-white font-lexe py-10'>
               {project.name}
             </h1>
-            <div className='flex flex-col md:flex-row items-center justify-center pb-10 space-x-7 space-y-4'>
-              <Link className='hover:scale-110' href='./'>
-                <a className='text-white border border-gold px-7 py-2 bg-drkRed/50 rounded '>
+            <div className='flex flex-col md:flex-row justify-between items-center mx-auto pb-10 '>
+              <Link href='./'>
+                <a className='text-white border border-gold m-3 px-7 py-2 bg-drkRed/50 rounded text-center'>
                   Back to Projects
                 </a>
               </Link>
-              <Link
-                className='hover:scale-110'
-                href={'../' + project.name + '/index.html'}>
+              <Link href={'../' + project.name + '/index.html'}>
                 <a
                   target='_blank'
-                  className='text-white border border-gold px-7 py-2 bg-drkRed/50 rounded '>
+                  className='text-white border border-gold m-3 px-7 py-2 bg-drkRed/50 rounded text-center'>
                   View Project
                 </a>
               </Link>
