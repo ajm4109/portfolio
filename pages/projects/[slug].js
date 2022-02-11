@@ -34,7 +34,7 @@ const Project = ({ project }) => {
             <h1 className='text-center text-5xl md:text-6xl text-white font-lexe py-10'>
               {project.name}
             </h1>
-            <div className='flex flex-col md:flex-row justify-center pb-10 space-x-7 space-y-4'>
+            <div className='flex flex-col md:flex-row items-center justify-center pb-10 space-x-7 space-y-4'>
               <Link className='hover:scale-110' href='./'>
                 <a className='text-white border border-gold px-7 py-2 bg-drkRed/50 rounded '>
                   Back to Projects
