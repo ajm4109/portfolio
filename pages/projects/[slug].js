@@ -54,6 +54,9 @@ const Project = ({ project }) => {
               <PortableText
                 className='text-white font-mont text-lg'
                 content={project.body}
+                serializers={{
+                  normal: ({ children }) => <p className='my-5'>{children}</p>,
+                }}
               />
             </div>
           </section>
