@@ -16,7 +16,7 @@ const Header = () => {
     if (location.pathname === '/projects') {
       setNavBG('linear-gradient(#770000, #0A0900)');
     } else if (location.pathname === '/skills') {
-      setNavBG('linear-gradient(#770000, #A5A5A5)');
+      setNavBG('linear-gradient(#770000, #5F5F5F)');
     } else if (location.pathname === '/about') {
       setNavBG('linear-gradient(#770000, #040821)');
     } else {

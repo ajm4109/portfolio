@@ -31,7 +31,7 @@ const Project = ({ project }) => {
             />
           </div>
           <section className='px-7 max-w-6xl mx-auto flex flex-col items-center justify-center'>
-            <h1 className='text-center shrink text-4xl md:text-6xl text-white font-lexe py-10'>
+            <h1 className='text-center shrink text-5xl md:text-6xl text-white font-lexe py-10'>
               {project.name}
             </h1>
             <div className='flex flex-col md:flex-row justify-between items-center mx-auto pb-10 '>
