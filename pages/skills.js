@@ -19,6 +19,7 @@ import {
   SiExpress,
   SiNodedotjs,
   SiIonic,
+  SiTypescript,
 } from 'react-icons/si';
 
 const Skills = () => {
@@ -101,11 +102,15 @@ const Skills = () => {
               </p>
               <p>
                 Once I learned the basics of JavaScript, such as, ternary
-                expressions, short-circuiting, callstack {`&`} heap and arrow
-                functions... you know, the basics, I wanted to learn the skills
-                to do full stack web dev and that{`'`}s when I started learning
-                things like React, Styled-components (which I don{`'`}t use
-                anymore) and what the MERN stack is.
+                expressions, short-circuiting, callstack {`&`} heap,
+                destructuring, spread {`&`} rest and arrow functions... you
+                know, the basics!
+              </p>
+              <p>
+                I wanted to learn the skills to do full stack web dev and that
+                {`'`}s when I started learning things like React,
+                Styled-components (which I don{`'`}t use anymore) and what the
+                MERN stack is.
               </p>
               <p>
                 In my research and development, I learned that there are even
@@ -136,6 +141,7 @@ const Skills = () => {
               </p>
               <h1>Things to come...</h1>
               <div className='flex flex-wrap items-center justify-evenly max-w-lg mx-auto'>
+                <SiTypescript className='text-4xl' />
                 <AiTwotoneApi className='text-4xl' />
                 <SiFirebase className='text-4xl' />
                 <SiMongodb className='text-4xl' />
@@ -145,6 +151,7 @@ const Skills = () => {
                 <SiIonic className='text-4xl' />
                 <MdMobileFriendly className='text-4xl' />
               </div>
+              <p>Learn TypScript! ... And ...</p>
               <p>
                 Over the next few months I will be working on fully funtional
                 clones to strengthen the knowledge I have gained thus far and to
