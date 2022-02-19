@@ -34,13 +34,12 @@ const Home = ({ posts }) => {
                 width={150}
                 alt='Profile picture'
                 className='rounded-full right-0'
+                priority
               />
               <h2 className='text-white text-3xl justify-start font-lexe'>
                 My name is
                 <br /> Anthony J. Martin <br />
-                <span className='text-lg font-mont'>
-                  ...But you may call me AJ 😎
-                </span>
+                <span className='text-lg font-mont'>...But, call me AJ 😎</span>
               </h2>
               <p className='font-mont text-xl text-white mt-6'>
                 I am a Skilled Laborer thats turning Coder!
@@ -76,16 +75,16 @@ const Home = ({ posts }) => {
                 </h1>
               </div>
 
-              {posts.map((post) => (
-                <div key={post._id} className='max-w-2xl mx-auto'>
-                  <div className='border-2 border-slate-800 shadow-lg rounded-xl p-5'>
+              {posts.map((apost) => (
+                <div key={apost._id} className='max-w-2xl mx-auto'>
+                  <div className='border-2 border-slate-800 shadow-lg rounded-xl p-5 my-6'>
                     <h1 className='font-bold text-xl font-lexe '>
-                      {post.title}
+                      {apost.title}
                     </h1>
                     <p className='font-mont text-sm py-3'>
-                      {post.shortDescription}
+                      {apost.shortDescription}
                     </p>
-                    <p className='font-mono text-sm'>{post.date}</p>
+                    <p className='font-mono text-sm'>{apost.date}</p>
                   </div>
                 </div>
               ))}
@@ -99,7 +98,7 @@ const Home = ({ posts }) => {
 
 export default Home;
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const query = `*[_type=='annoPost']{
     _id,
     title,

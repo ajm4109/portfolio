@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <header className='sticky top-0 z-50'>
       <nav
-        className=' flex justify-between lg:justify-around items-center px-5 h-20'
+        className=' flex justify-between items-center px-5 lg:px-14 h-20 lg:h-24'
         style={{ background: navBG }}>
         <div className='z-10'>
           <Link href='/'>
@@ -57,21 +57,21 @@ const Header = () => {
           <ul className='hidden sm:inline-flex items-center space-x-3'>
             <li>
               <Link href='/projects'>
-                <a className='text-white text-2xl hover:text-gold hover:border-b-2 hover:border-gold'>
+                <a className='text-white text-2xl lg:text-3xl hover:text-gold hover:border-b-2 hover:border-gold'>
                   Projects
                 </a>
               </Link>
             </li>
             <li>
               <Link href='/skills'>
-                <a className='text-white text-2xl hover:text-gold hover:border-b-2 hover:border-gold hover:scale-125'>
+                <a className='text-white text-2xl lg:text-3xl hover:text-gold hover:border-b-2 hover:border-gold hover:scale-125'>
                   Skills
                 </a>
               </Link>
             </li>
             <li>
               <Link href='/about'>
-                <a className='text-white text-2xl hover:text-gold hover:border-b-2 hover:border-gold hover:scale-125'>
+                <a className='text-white text-2xl lg:text-3xl hover:text-gold hover:border-b-2 hover:border-gold hover:scale-125'>
                   About
                 </a>
               </Link>
