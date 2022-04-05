@@ -32,14 +32,8 @@ export default {
       },
     },
     {
-      name: 'categories',
-      title: 'Categories',
-      type: 'array',
-      of: [{ type: 'reference', to: { type: 'category' } }],
-    },
-    {
-      title: 'Tags',
       name: 'tags',
+      title: 'Tags',
       type: 'array',
       of: [{ type: 'string' }],
       options: {

@@ -6,7 +6,6 @@ import schemaTypes from 'all:part:@sanity/base/schema-type';
 
 // We import object and document schemas
 import blockContent from './blockContent';
-import category from './category';
 import blogpost from './blogpost';
 import author from './author';
 import annopost from './annopost';
@@ -25,7 +24,6 @@ export default createSchema({
     blogpost,
     projects,
     author,
-    category,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,

@@ -3,25 +3,25 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
-    font-family: 'lexend';
-    src: url('/fonts/LexendGiga-Regular.ttf');
-  }
-  @font-face {
-    font-family: 'IBM';
-    src: url('/fonts/IBMPlexMono-Medium.ttf');
-  }
-  @font-face {
-    font-family: 'montserrat';
-    src: url('/fonts/Montserrat-Regular.ttf');
-  }
-  h1 {
-    @apply text-2xl font-lexe my-5;
-  }
-  h2 {
-    @apply text-xl font-lexe my-5;
-  }
-  p {
-    @apply font-mont my-5;
-  }
+	@font-face {
+		font-family: 'lexend';
+		src: url('/fonts/LexendGiga-Regular.ttf');
+	}
+	@font-face {
+		font-family: 'IBM';
+		src: url('/fonts/IBMPlexMono-Medium.ttf');
+	}
+	@font-face {
+		font-family: 'montserrat';
+		src: url('/fonts/Montserrat-Regular.ttf');
+	}
+	h1 {
+		@apply text-2xl font-lexe;
+	}
+	h2 {
+		@apply text-xl font-lexe;
+	}
+	p {
+		@apply font-mont;
+	}
 } ;

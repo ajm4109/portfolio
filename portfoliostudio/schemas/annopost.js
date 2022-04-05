@@ -18,15 +18,18 @@ export default {
       },
     },
     {
-      name: 'categories',
-      title: 'Categories',
-      type: 'array',
-      of: [{ type: 'reference', to: { type: 'category' } }],
-    },
-    {
       name: 'date',
       title: 'Date',
       type: 'date',
+    },
+    {
+      title: 'Tags',
+      name: 'tags',
+      type: 'array',
+      of: [{ type: 'string' }],
+      options: {
+        layout: 'tags',
+      },
     },
     {
       name: 'shortDescription',
